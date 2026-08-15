@@ -270,10 +270,23 @@
     border-radius: 3px;
     letter-spacing: 0.02em;
   }
+  .btn-secondary {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.82rem;
+    text-decoration: none;
+    color: var(--text);
+    background: transparent;
+    border: 1px solid var(--rule-strong);
+    padding: 11px 20px;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+  }
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent-ink); }
   .hero-actions .note {
     font-size: 0.82rem;
     color: var(--text-soft);
-    max-width: 30ch;
+    max-width: 34ch;
+    flex-basis: 100%;
   }
 
   /* ---------- flip demo ---------- */
@@ -597,8 +610,9 @@
           </div>
         </div>
         <div class="hero-actions">
-          <a class="btn-primary" href="mailto:apoorvactor@gmail.com">Get in touch</a>
-          <span class="note">Source lives in a private repository during active development — see the note at the bottom of this page.</span>
+          <a class="btn-primary" href="https://github.com/Shih-vaa/deardiary-preview/releases/download/v1.0.0-preview/app-release.apk">Download APK &middot; 181 MB</a>
+          <a class="btn-secondary" href="mailto:apoorvactor@gmail.com">Get in touch</a>
+          <span class="note">Installable Android build, ahead of Play Store submission. You'll need to allow "install from unknown sources" — source itself lives in a private repository during active development.</span>
         </div>
       </div>
 
