@@ -269,6 +269,22 @@
     padding: 12px 20px;
     border-radius: 3px;
     letter-spacing: 0.02em;
+    display: inline-block;
+  }
+  .btn-download {
+    animation: pulse-attention 1.8s ease-in-out infinite;
+    transform-origin: center;
+  }
+  .btn-download:hover,
+  .btn-download:focus-visible {
+    animation-play-state: paused;
+  }
+  @keyframes pulse-attention {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(169, 117, 46, 0); }
+    50% { transform: scale(1.07); box-shadow: 0 0 0 8px rgba(169, 117, 46, 0.12); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .btn-download { animation: none; }
   }
   .btn-secondary {
     font-family: 'IBM Plex Mono', monospace;
@@ -610,7 +626,7 @@
           </div>
         </div>
         <div class="hero-actions">
-          <a class="btn-primary" href="https://github.com/Shih-vaa/deardiary-preview/releases/download/v1.0.0-preview/app-release.apk">Download APK &middot; 181 MB</a>
+          <a class="btn-primary btn-download" href="https://github.com/Shih-vaa/deardiary-preview/releases/download/v1.0.0-preview/deardiary.apk">Download APK &middot; 181 MB</a>
           <a class="btn-secondary" href="mailto:apoorvactor@gmail.com">Get in touch</a>
           <span class="note">Installable Android build, ahead of Play Store submission. You'll need to allow "install from unknown sources" — source itself lives in a private repository during active development.</span>
         </div>
